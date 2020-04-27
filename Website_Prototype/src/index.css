@@ -1,4 +1,19 @@
-.headerFixed {
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(100, 66, 114);
+}
+
+body {
+    height: 100%;
+    padding-top: 6%;
+}
+/* header section */
+.header-fixed {
     background-color: black;
     position: fixed;
     top: 0;
@@ -7,14 +22,14 @@
     padding: 20px 10px;
     z-index: 999;
 }
-
-.searchBar {
+/* search bar section */
+.search-bar {
     width: 100%;
     position: relative;
     display: flex;
 }
 
-.searchTerm {
+.search-term {
     width: 100%;
     border: 3px solid turquoise;
     padding: 5px;
@@ -24,11 +39,11 @@
     color: gray;
 }
 
-.searchTerm:focus {
+.search-term:focus {
     color: black;
 }
 
-.searchButton {
+.search-button {
     width: 40px;
     height: 36px;
     border: 1px solid turquoise;
@@ -40,30 +55,55 @@
     font-size: 20px;
 }
 
-.searchWrapper {
+.search-wrapper {
     width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.buttonWrapper {
-    width: 5%;
-    position: relative;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+/* registration section for both log in and sign up */
+.regist-wrapper {
+    float: right;
+    margin-left: 1%;
+    background-color: black;
+    color: white;
 }
 
-.loginButton {
-    width: 40px;
-    height: 64px;
-    border: 1px solid turquoise;
-    background: turquoise;
+#loginAnchor {
     text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
+    position: relative;
+    background-color: rgb(126, 230, 230);
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 20px;
+}
+
+#signupAnchor {
+    text-align: center;
+    position: relative;
+    background-color: rgb(126, 230, 230);
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* hero image section */
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/ph-hero.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-text {
+    padding-top: 10%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
