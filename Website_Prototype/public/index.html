@@ -39,21 +39,44 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
     </div>
-    <!-- slide show banners -->
-    <div class="slide-show-container">
-        <div class="slides-content">
-            <img class="slides" src="../Assets/ph-slide1.jpeg" alt="img_slide1">
-            <img class="slides" src="../Assets/ph-slide2.jpeg" alt="img_slide2">
-            <img class="slides" src="../Assets/ph-slide3.jpeg" alt="img_slide3">
+    <!-- double banner -->
+    <div class="double-container">
+        <div class="double-top">
+            <img src="../Assets/ph-double1.jpg" alt="double1">
         </div>
-        <div class="slider-wrapper">
-            <div class="slider">
-                <button class="slider-button" onclick="plusDivs(-1)">❮ Prev</button>
-                <button class="slider-button" onclick="plusDivs(1)">Next ❯</button>     
-            </div>
-            <button class="num-slider" id="firstSlide" onclick="currentDiv(1)">1</button>
-            <button class="num-slider" onclick="currentDiv(2)">2</button>
-            <button class="num-slider" onclick="currentDiv(3)">3</button>
+        <div class="double-bot">
+            <img src="../Assets/ph-double2.jpg" alt="double2">
+        </div>
+    </div>
+    <!-- slideshow banners -->
+    <div class="slide-show-container">
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide1.jpeg" alt="slide1">
+        </div>
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide2.jpeg" alt="slide2">
+        </div>
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide3.jpeg" alt="slide3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- category scroll menu -->
+    <div class="menu-container">
+        <div class="horizontal-menu">
+            <!-- replace with icon image -->
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
         </div>
     </div>
 </body>
