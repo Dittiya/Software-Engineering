@@ -89,6 +89,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
 /* hero image section */
 .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/ph-hero.jpeg");
@@ -99,11 +100,65 @@ body {
 }
 
 .hero-text {
-    padding-top: 10%;
+    padding-top: 20%;
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+/* slideshow banner section */
+.slide-show-container {
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+.slides {
+    left: 25%;
+    width: 752px;
+    height: 400px;
+}
+
+.slider-wrapper {
+    transform: translate(40%, 5%);
+}
+
+.slider-button {
+    margin-left: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.num-slider {
+    margin-left: 2px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#firstSlide {
+    margin-left: 5%;
+    margin-top: 1px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.num-slider:hover, #firstSlide:hover, .slider-button:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.indicator {
+    color:#fff!important;
+    background-color:#f44336!important;
+}
+
+.w3-red, .w3-hover-red:hover {
+    color:#fff!important;
+    background-color:#f44336!important;
 }
