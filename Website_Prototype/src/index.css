@@ -14,7 +14,7 @@ body {
 }
 /* header section */
 .header-fixed {
-    background-color: black;
+    background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
@@ -89,6 +89,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
 /* hero image section */
 .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/ph-hero.jpeg");
@@ -99,11 +100,134 @@ body {
 }
 
 .hero-text {
-    padding-top: 10%;
+    padding-top: 20%;
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* slideshow banner section */
+.slide-show-container {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+
+.slides-fade {
+    display: none
+}
+
+.slides-fade img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dots-container {
+    text-align: center;
+    transform: translate(0%, -100%);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+/* double banner section */
+.double-container {
+    float: left;
+    width: 49.5%;
+}
+
+.double-container img {
+    width: 100%;
+    height: 199px;
+}
+
+/* category section */
+.horizontal-menu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 425px;
+    background-color: #333;
+}
+
+.horizontal-menu a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.horizontal-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.horizontal-menu a:active {
+    background-color: teal;
     color: white;
 }

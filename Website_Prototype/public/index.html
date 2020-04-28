@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/index.css">
+    <script async src="../src/index.js"></script>
     <title>Prototype</title>
 </head>
 
@@ -31,10 +32,51 @@
 </header>
 
 <body>
+    <!-- hero image -->
     <div class="hero-image">
         <div class="hero-text">
             <h1>Lorem Ipsum</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- double banner -->
+    <div class="double-container">
+        <div class="double-top">
+            <img src="../Assets/ph-double1.jpg" alt="double1">
+        </div>
+        <div class="double-bot">
+            <img src="../Assets/ph-double2.jpg" alt="double2">
+        </div>
+    </div>
+    <!-- slideshow banners -->
+    <div class="slide-show-container">
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide1.jpeg" alt="slide1">
+        </div>
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide2.jpeg" alt="slide2">
+        </div>
+        <div class="slides-fade">
+            <img src="../Assets/ph-slide3.jpeg" alt="slide3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- category scroll menu -->
+    <div class="menu-container">
+        <div class="horizontal-menu">
+            <!-- replace with icon image -->
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
         </div>
     </div>
 </body>
