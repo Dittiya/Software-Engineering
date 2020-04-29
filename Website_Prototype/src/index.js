@@ -1,31 +1,3 @@
-// slideshow banner section
-// var slideIndex = 1;
-// showDivs(slideIndex);
-
-// function plusDivs(n) {
-//     showDivs(slideIndex += n);
-// }
-
-// function currentDiv(n) {
-//     showDivs(slideIndex = n)
-// }
-
-// function showDivs(n) {
-//     var i;
-//     var x = document.getElementsByClassName("slides");
-//     var dots = document.getElementsByClassName("num-slider");
-//     if (n > x.length) slideIndex = 1;
-//     if (n < 1) slideIndex = x.length;
-//     for (i=0; i<x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-//     for (i=0; i<dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" indicator", "");
-//     }
-//     x[slideIndex-1].style.display = "block";
-//     dots[slideIndex-1].className += " indicator";
-// }
-
 // category scroll menu section
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -52,4 +24,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+// cookies
+var user_sess = 'false';
+user_sess = sessionStorage.getItem('clicked');
+var username = sessionStorage.getItem('username');
+
+if (user_sess == 'true') {
+  // hack login part
 }

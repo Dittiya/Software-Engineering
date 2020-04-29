@@ -1,0 +1,119 @@
+a:link {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: royalblue;
+}
+
+body {
+    margin-top: 10%;
+}
+
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 10px;  
+    border: 2.5px solid;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+
+input[type=button], button {
+    text-align: center;
+    position: relative;
+    margin-left: 80%;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type=button]:hover, button:hover {
+    background-color: lightslategray;
+}
+
+#navbar-fixed {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#header-title {
+    float: left;
+    width: 250px;
+}
+
+#home-page-anchor {
+    float: right;
+    margin-left: 100px;
+}
+
+#form-header {
+    position: relative;
+    text-align: center;
+}
+
+#regis-form-field {
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 30%;
+    padding: 20px;
+    border: 5px black groove;
+    background-color: lightsteelblue;
+}
+
+.text-mod {
+    color: white;
+    margin: 0 20px 0 20px;
+}
+
+.header-fixed {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    z-index: 999;
+}
+
+/* registration section for both log in and sign up */
+.regist-wrapper {
+    float: right;
+    margin-left: 1%;
+    background-color: black;
+    color: white;
+}
+
+#loginAnchor {
+    text-align: center;
+    position: relative;
+    background-color: rgb(126, 230, 230);
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#signupAnchor {
+    text-align: center;
+    position: relative;
+    background-color: rgb(126, 230, 230);
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
