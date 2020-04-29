@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../src/regist.css">
+</head>
+<header>
+    <!-- Header for logo, search bar, sign in/up, cart -->
+    <div class="header-fixed">
+        <a href="./index.html" class="logo">Logo</a>        
+        <div class="regist-wrapper" id="signupAnchor">
+            <h3><a href="./regist.html">Sign Up</a></h3>
+        </div>
+        <div class="regist-wrapper" id="loginAnchor">
+            <h3><a href="./.html">Log In</a></h3>
+        </div>
+
+    </div>
+</header>
+<body>
+    <div id="regis-form-field">
+        <h1 id="form-header">Join Now!</h1>
+        <form id="regis-form">
+            Name: <br>
+            <input type="text" id="username">
+            <br><br>
+
+            Password: <br>
+            <input type="password" name="password" id="password">
+            <br><br>
+
+            <!-- Gender: <br>
+            <input type="radio" name="gender" id="Male" value="male">
+            <label for="male">Male</label> <br>
+            <input type="radio" name="gender" id="Female" value="female">
+            <label for="female">Female</label> <br>
+            <input type="radio" name="gender" id="Other" value="other">
+            <label for="other">Other</label> 
+            <br><br> -->
+
+            Organization: <br>
+            <input type="text" name="org">
+            <br> <br>
+
+            E-mail: <br>
+            <input type="text" name="email">
+            <br> <br>
+
+            <!-- <input type="button" value="submit"> -->
+            <button type="button"><a href="index.html">Submit</a></button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../src/regist.js"></script>
+</body>
+</html>
