@@ -12,12 +12,12 @@
     <div class="header-fixed">
         <a href="#default" class="logo">Logo</a>
 
-        <div class="search-wrapper">
+        <!-- <div class="search-wrapper">
             <div class="search-bar">
                 <input type="text" class="search-term" placeholder="What are you looking for?">
                 <button type="submit" class="search-button"></button>
             </div>
-        </div>
+        </div> -->
         
         <div class="regist-wrapper" id="signupAnchor">
             <h3><a href="./regist.html">Sign Up</a></h3>
@@ -70,14 +70,16 @@
     <div class="menu-container">
         <div class="horizontal-menu">
             <!-- replace with icon image -->
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
-            <a href="">Link 4</a>
-            <a href="">Link 5</a>
+            <button id="change1">Organization 1</button>
+            <button id="change2">Organization 2</button>
+            <button id="change3">Organization 3</button>
         </div>
     </div>
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script async src="../src/index.js"></script>
+    <!-- iframe illusion -->
+    <div class="iframe-container">
+        <iframe id="frame" src="org1.html" frameborder="0"></iframe>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../src/index.js"></script>
 </body>
 </html>
