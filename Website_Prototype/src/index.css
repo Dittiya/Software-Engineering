@@ -23,6 +23,7 @@ body {
     padding: 20px 10px;
     z-index: 999;
 }
+
 /* search bar section */
 .search-bar {
     width: 100%;
@@ -214,21 +215,29 @@ body {
     background-color: #333;
 }
 
-.horizontal-menu a {
+.horizontal-menu button {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 12px 20px;
     text-decoration: none;
     font-size: 17px;
+    background-color: transparent;
 }
 
-.horizontal-menu a:hover {
+.horizontal-menu button:hover {
     background-color: #ddd;
+    cursor: pointer;
     color: black;
 }
 
-.horizontal-menu a:active {
+.horizontal-menu button:active {
     background-color: teal;
     color: white;
+}
+
+/* iframe section */
+iframe {
+    width: 100%;
+    height: 300px;
 }

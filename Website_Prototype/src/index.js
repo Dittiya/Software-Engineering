@@ -31,6 +31,24 @@ var user_sess = 'false';
 user_sess = sessionStorage.getItem('clicked');
 var username = sessionStorage.getItem('username');
 
-if (user_sess == 'true') {
-  // hack login part
-}
+// while (user_sess == 'true') {
+//   // user logged in
+// }
+
+
+
+// change iframe
+$(document).ready(function () {
+  $('#change1').click(function (e) { 
+    $('#frame').attr('src', 'org1.html');
+    e.preventDefault();
+  });
+  $('#change2').click(function (e) { 
+    $('#frame').attr('src', 'org2.html');
+    e.preventDefault();
+  });
+  $('#change3').click(function (e) { 
+    $('#frame').attr('src', 'org3.html');
+    e.preventDefault();
+  });
+});
