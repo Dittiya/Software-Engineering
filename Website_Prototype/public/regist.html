@@ -28,7 +28,7 @@
             <br><br>
 
             Password: <br>
-            <input type="password" name="password" id="password">
+            <input type="text" name="password" id="password">
             <br><br>
 
             <!-- Gender: <br>
@@ -41,18 +41,19 @@
             <br><br> -->
 
             Organization: <br>
-            <input type="text" name="org">
+            <input type="text" name="org" id="org">
             <br> <br>
 
             E-mail: <br>
-            <input type="text" name="email">
+            <input type="text" name="email" id="email">
             <br> <br>
 
             <!-- <input type="button" value="submit"> -->
-            <button type="button"><a href="index.html">Submit</a></button>
+            <button id="register" type="button">Submit</button>
         </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
     <script src="../src/regist.js"></script>
 </body>
 </html>
