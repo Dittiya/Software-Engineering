@@ -24,7 +24,7 @@
         </div>
 
         <div class="regist-wrapper" id="loginAnchor">
-            <h3><a href="./.html">Log In</a></h3>
+            <h3><a href="./login.html">Log In</a></h3>
         </div>
 
     </div>
@@ -58,8 +58,8 @@
         <div class="slides-fade">
             <img src="../Assets/ph-slide3.jpeg" alt="slide3">
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
         <div class="dots-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -80,7 +80,8 @@
         <iframe id="frame" src="org1.html" frameborder="0"></iframe>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/pouchdb@7.1.1/dist/pouchdb.min.js"></script>
-    <script src="../src/index.js"></script>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <script type="module" src="../src/index.js"></script>
+    <script src="../src/slider.js"></script>
 </body>
 </html>

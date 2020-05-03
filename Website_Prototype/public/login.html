@@ -21,7 +21,7 @@
 </header>
 <body>
     <div id="regis-form-field">
-        <h1 id="form-header">Sign Up</h1>
+        <h1 id="form-header">Log In</h1>
         <form id="regis-form">
             Username: <br>
             <input type="text" id="username">
@@ -31,29 +31,13 @@
             <input type="text" name="password" id="password">
             <br><br>
 
-            <!-- Gender: <br>
-            <input type="radio" name="gender" id="Male" value="male">
-            <label for="male">Male</label> <br>
-            <input type="radio" name="gender" id="Female" value="female">
-            <label for="female">Female</label> <br>
-            <input type="radio" name="gender" id="Other" value="other">
-            <label for="other">Other</label> 
-            <br><br> -->
-
-            Organization: <br>
-            <input type="text" name="org" id="org">
-            <br> <br>
-
-            E-mail: <br>
-            <input type="text" name="email" id="email">
-            <br> <br>
-
             <!-- <input type="button" value="submit"> -->
-            <button id="register" type="button">Submit</button>
+            <button id="login" type="button">Submit</button>
         </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
-    <script src="../src/regist.js"></script>
+    <!-- <script type="module" src="../src/cookies.js"></script> -->
+    <script type="module" src="../src/login.js"></script>
 </body>
 </html>
