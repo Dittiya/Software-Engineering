@@ -1,5 +1,5 @@
 body {
-    margin-top: 4%;
+    margin-top: -2%;
 }
 
 .header-fixed {
@@ -55,16 +55,15 @@ body {
 }
 
 /* table */
-.item-table {
+table,th,td {
     border: 1px solid #333;
-    border-collapse: separate;
     border-spacing: 10px;
     text-align: center;
     margin-top: 5%;
 }
 
 /* image */
-.item-table img {
+table img {
     width: 150px;
     height: 100px;
 }
