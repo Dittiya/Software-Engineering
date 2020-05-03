@@ -1,17 +1,8 @@
-// cookies
-// $(document).ready(function () {
-//     $('#register').click(function () { 
-//         var usernameid = document.getElementById('username').value;
-//         sessionStorage.setItem('clicked', 'true');
-//         sessionStorage.setItem('username', usernameid);
-//     });
-// });
-
 // database with Dexie.js API
 // and saved to indexedDB
 // debug database through chrome dev tool -> Application
 var db = new Dexie('user_database');
-db.version(1).stores({
+db.version(3).stores({
     user: 'username,password,org,email'
 });
 console.log('database loaded');
@@ -38,3 +29,4 @@ $(document).ready(function () {
         })
     });
 });
+

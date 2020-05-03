@@ -1,41 +1,14 @@
-// category scroll menu section
-var slideIndex = 1;
-showSlides(slideIndex);
+import * as Cookies from "./cookies.js";
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides-fade");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+// cookies framework
+$(document).ready(function () {
+  var sess_id = Cookies.getCookie('username');
+  if (sess_id) {
+    alert('logged in as ' + sess_id);
+    Cookies.eraseCookie('username');
+    console.log(sess_id);
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-// cookies
-var user_sess = 'false';
-user_sess = sessionStorage.getItem('clicked');
-var username = sessionStorage.getItem('username');
-
-// while (user_sess == 'true') {
-//   // user logged in
-// }
-
-
+});
 
 // change iframe
 $(document).ready(function () {
