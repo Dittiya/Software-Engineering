@@ -16,7 +16,9 @@ $(document).ready(function () {
     
         db.user.get(id, function(query) {
             alert('logged in as ' + query.username);
-            Cookies.setCookie('username',id);
+            if (query.username == id) {
+                Cookies.setCookie('username',id);
+            }
         });
     });
 });
