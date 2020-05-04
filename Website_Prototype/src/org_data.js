@@ -2,7 +2,6 @@ var db = new Dexie('item_database');
 db.version(3).stores({
     item: 'id,src,price'
 });
-console.log('connected to database');
 
 // populate database
 $(document).ready(function () {
