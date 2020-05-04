@@ -15,9 +15,10 @@ $(document).ready(function () {
         var pass = $('#password').val();
     
         db.user.get(id, function(query) {
-            if (query.username == id && query.pass == pass) {
+            if (query.username == id && query.password == pass) {
                 Cookies.setCookie('username',id);
                 alert('logged in as ' + query.username);
+                window.location.href = './index.html';
             } else {
                 alert('Password or Username is incorrect!');
             }
