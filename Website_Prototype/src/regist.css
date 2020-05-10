@@ -117,3 +117,38 @@ input[type=button]:hover, button:hover {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.logo img{
+    width: 5%;
+}
+
+/* header section */
+.header-fixed {
+    background-color: #fff1bc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    z-index: 999;
+}
+
+#loginAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#signupAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

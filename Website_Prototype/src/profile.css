@@ -13,6 +13,7 @@ body {
     padding-top: 6%;
     margin-top: 5%;
 }
+
 /* profile header section */
 .seller
 {
@@ -42,15 +43,39 @@ table,th,td {
     margin-left: 25%;
 }
 
+.logo img{
+    width: 5%;
+}
+
 /* header section */
 .header-fixed {
-    background-color: #333;
+    background-color: #fff1bc;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 20px 10px;
     z-index: 999;
+}
+
+#loginAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#signupAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* search bar section */
@@ -101,172 +126,30 @@ table,th,td {
     color: white;
 }
 
-#loginAnchor {
-    text-align: center;
-    position: relative;
-    background-color: rgb(126, 230, 230);
-    padding: 1px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#signupAnchor {
-    text-align: center;
-    position: relative;
-    background-color: rgb(126, 230, 230);
-    padding: 1px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-/* hero image section */
-.hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/ph-hero.jpeg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.hero-text {
-    padding-top: 20%;
-    text-align: center;
-    position: relative;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-/* slideshow banner section */
-.slide-show-container {
-    position: relative;
-    width: 50%;
-    height: 400px;
+.item-container {
+    background-color: red;
     float: right;
+    width: 75%;
 }
 
-.slides-fade {
-    display: none
-}
-
-.slides-fade img {
-    vertical-align: middle;
-    width: 100%;
-    height: 400px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dots-container {
-    text-align: center;
-    transform: translate(0%, -100%);
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-
-/* double banner section */
-.double-container {
+.item-category {
+    width: 25%;
     float: left;
-    width: 49.5%;
 }
 
-.double-container img {
-    width: 100%;
-    height: 199px;
-}
-
-/* category section */
-.horizontal-menu {
-    overflow: auto;
-    white-space: nowrap;
-    margin-top: 425px;
-    background-color: #333;
-}
-
-.horizontal-menu button {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    background-color: transparent;
-}
-
-.horizontal-menu button:hover {
-    background-color: #ddd;
-    cursor: pointer;
+.item-category a {
+    background-color: #eee;
     color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
 }
 
-.horizontal-menu button:active {
+.item-category a:hover {
+    background-color: #ccc;
+}
+
+.item-category a#active {
     background-color: teal;
     color: white;
-}
-
-/* iframe section */
-iframe {
-    width: 100%;
-    height: 500px;
 }
