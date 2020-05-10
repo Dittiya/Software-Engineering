@@ -129,6 +129,7 @@ table,th,td {
 .item-container {
     float: right;
     width: 75%;
+    background-color: red;
 }
 
 .item-category {
@@ -151,4 +152,9 @@ table,th,td {
 .item-category a#active {
     background-color: teal;
     color: white;
+}
+
+/* add items */
+.add-item {
+    background-color: pink;
 }

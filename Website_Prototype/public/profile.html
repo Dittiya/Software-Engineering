@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
                 <button type="submit" class="search-button"></button>
             </div>
         </div> -->
-        
+
         <div class="regist-wrapper" id="signupAnchor">
             <h3><a id="signUp" href="./regist.html">Sign Up</a></h3>
         </div>
@@ -27,6 +28,7 @@
 
     </div>
 </header>
+
 <body>
     <img src="../Assets/seller_cover.jpg" id="seller_cover">
     <div class="seller">
@@ -43,10 +45,20 @@
         <a href="#">Category 4</a>
         <a href="#">Category 5</a>
     </div>
+    <div class="add-item">
+        Add item here:
+        <br>
+        <input type="text" id="itemName" placeholder="Name">
+        <br>
+        <input type="text" id="itemPrice" placeholder="Price">
+        <br><br>
+        <button id="addButton">Add</button>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
     <script type="module" src="../src/profile.js"></script>
-    <script src="../src/org_data.js"></script>
-    <script src="../src/profile.js"></script>
+    <!-- <script src="../src/org_data.js"></script> -->
+    <script src="../src/database.js"></script>
 </body>
+
 </html>>
