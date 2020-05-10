@@ -8,7 +8,7 @@ $(document).ready(function () {
     console.log(sess_id);
     $('#signUp').attr('href', '#default');
     $('#signUp').text('Log Out');
-    $('#logIn').attr('href', './seller.html');
+    $('#logIn').attr('href', './profile.html');
     $('#logIn').text('Profile');
 
     $('#signUp').click(function (e) {

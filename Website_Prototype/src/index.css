@@ -10,18 +10,43 @@ a {
 
 body {
     height: 100%;
-    padding-top: 6%;
+    padding-top: 7%;
     margin-top: 1%;
 }
+
+.logo img{
+    width: 5%;
+}
+
 /* header section */
 .header-fixed {
-    background-color: #333;
+    background-color: #fff1bc;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 20px 10px;
     z-index: 999;
+}
+
+#loginAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#signupAnchor {
+    text-align: center;
+    position: relative;
+    background-color: #52de97;
+    padding: 1px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* search bar section */
@@ -70,26 +95,6 @@ body {
     margin-left: 1%;
     background-color: black;
     color: white;
-}
-
-#loginAnchor {
-    text-align: center;
-    position: relative;
-    background-color: rgb(126, 230, 230);
-    padding: 1px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#signupAnchor {
-    text-align: center;
-    position: relative;
-    background-color: rgb(126, 230, 230);
-    padding: 1px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 /* hero image section */
