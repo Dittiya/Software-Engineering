@@ -42,4 +42,5 @@ function addItem () {
 $('#addButton').click(function (e) { 
     e.preventDefault();
     addItem();
+    location.reload(true);
 });
